@@ -1,0 +1,32 @@
+.login{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    input, button{
+        width: 30rem;
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        font-size: 1.6rem;
+    }
+    input{
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+        transition: border-radius 0.3s ease;
+        &:focus{
+            border-radius: 100px;
+        }
+    }
+    button{
+        background-color: darkcyan;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            opacity: 0.8;
+            border-radius: 100px;
+        }
+    }
+}
